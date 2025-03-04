@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Piedra, Papel y Tijeras</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+    <header>
+        <h1>Piedra, Papel y Tijeras</h1>
+    </header>
+    <div class="layer1">
+        <div class="jugadores">
+            <div class="card player">
+                <img class="profile-picture" src="Images/human.jpg" alt="Player Picture">
+                <p>Jugador</p>
+                <div class="player-score">
+                    <span>Score:</span>
+                </div>
+            </div>
+            <div class="vs">
+                <p>VS.</p>
+            </div>
+            <div class="card computer">
+                <img class="profile-picture" src="Images/robot.png" alt="Player Picture">
+                <p>Maquina</p>
+                <div class="computer-score">
+                    <span>Score:</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <h2 class="layer-text">Seleciona:</h2>
+    <div class="layer2">
+        <div class="card-option piedra">
+            <p class="option-icon">✊</p>
+            <div class="option-name">Piedra</div>
+        </div>
+
+        <div class="card-option papel">
+            <p class="option-icon">✋</p>
+            <div class="option-name">Papel</div>
+        </div>
+
+        <div class="card-option tijeras">
+            <p class="option-icon">✌</p>
+            <div class="option-name">Tijeras</div>
+        </div>
+    </div>
+    
+    <div class="window-notice" id="window-notice">
+        <div class="content">
+            <h2 class="content-text">Has ... </h2>
+            <button class="play-again">Jugar de Nuevo</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
